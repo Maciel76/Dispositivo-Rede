@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Dispositivos na Rede</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Monitoramento de Dispositivos na Rede</h1>
+        <div class="columns">
+            <!-- Colunas para cada categoria -->
+            <div class="column" id="adm">
+                <h2>Computadores ADM</h2>
+                <form onsubmit="adicionarIp('adm'); return false;">
+                    <input type="text" id="admNome" placeholder="Nome" required>
+                    <input type="text" id="admIp" placeholder="IP" required>
+                    <button type="submit">Adicionar</button>
+                </form>
+                <ul id="admList"></ul>
+                <button onclick="verificarCategoria('adm')">Verificar Status</button>
+                <button onclick="limparColuna('adm')"><i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+
+            <div class="column" id="pdv">
+                <h2>PDV da Empresa</h2>
+                <form onsubmit="adicionarIp('pdv'); return false;">
+                    <input type="text" id="pdvNome" placeholder="Nome" required>
+                    <input type="text" id="pdvIp" placeholder="IP" required>
+                    <button type="submit">Adicionar</button>
+                </form>
+                <ul id="pdvList"></ul>
+                <button onclick="verificarCategoria('pdv')">Verificar Status</button>
+                <button onclick="limparColuna('pdv')"><i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+
+            <div class="column" id="rubs">
+                <h2>Rubs da Empresa</h2>
+                <form onsubmit="adicionarIp('rubs'); return false;">
+                    <input type="text" id="rubsNome" placeholder="Nome" required>
+                    <input type="text" id="rubsIp" placeholder="IP" required>
+                    <button type="submit">Adicionar</button>
+                </form>
+                <ul id="rubsList"></ul>
+                <button onclick="verificarCategoria('rubs')">Verificar Status</button>
+                <button onclick="limparColuna('rubs')"><i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+
+            <div class="column" id="impressoras">
+                <h2>Impressoras</h2>
+                <form onsubmit="adicionarIp('impressoras'); return false;">
+                    <input type="text" id="impressorasNome" placeholder="Nome" required>
+                    <input type="text" id="impressorasIp" placeholder="IP" required>
+                    <button type="submit">Adicionar</button>
+                </form>
+                <ul id="impressorasList"></ul>
+                <button onclick="verificarCategoria('impressoras')">Verificar Status</button>
+                <button onclick="limparColuna('impressoras')"><i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+
+            <div class="column" id="balancas">
+                <h2>Balanças</h2>
+                <form onsubmit="adicionarIp('balancas'); return false;">
+                    <input type="text" id="balancasNome" placeholder="Nome" required>
+                    <input type="text" id="balancasIp" placeholder="IP" required>
+                    <button type="submit">Adicionar</button>
+                </form>
+                <ul id="balancasList"></ul>
+                <button onclick="verificarCategoria('balancas')">Verificar Status</button>
+                <button onclick="limparColuna('balancas')"><i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+        </div>
+        <button class="verificar-tudo" onclick="verificarTudo()">Verificar Todos </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

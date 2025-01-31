@@ -60,3 +60,5 @@ Sinta-se à vontade para contribuir enviando pull requests ou relatando problema
 Este sistema é de uso livre e não está atrelado a nenhuma licença específica. Você pode utilizá-lo, modificá-lo e distribuí-lo sem restrições.
 
 # Dispositivo-Rede
+
+Desenvolvido por ============== #MACIEL RIBEIRO# ================
